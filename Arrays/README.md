@@ -14,4 +14,4 @@ Arrays are not a dynamic data structure, I mean that once you've created an arra
 
 An easy way for arrays to remember the time complexity is if if the code requires a loop it's going to be linear time. If the code does not require a loop then it's constant time.
 
-![](BigO.png)
+![](BigO.PNG)
