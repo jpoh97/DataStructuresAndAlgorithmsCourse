@@ -27,3 +27,5 @@
 * Difficult to nail down the time complexity cuz it will depend on the gap. Worst case: O(n^2), buit it can perform much better than that.
 * Doesn't require as much shifting as insertion sort, so it usually performs better.
 * Unstable algorithm.
+
+![](shell.png)
