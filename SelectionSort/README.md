@@ -7,3 +7,4 @@
 * Doesn't require as much swapping as bubble sort.
 * Unstable algorithm.
 
+![](selection.gif)
