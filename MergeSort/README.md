@@ -21,4 +21,11 @@
 * Repeat until you have a single sorted array
 * Not in-place. Uses temporary arrays
 
+### Merging process
+
+* We merge sibling left and right arrays
+* We create a temporary array large enough to hold al the elements in the arrays we're merging
+* We set i to the first index of the left array, and j to the first index od the right array
+* We compare left[i] to right[j]. if left is smaller, we copy it to the temp array and increment i by 1. If right is smaller, we copy it to the temp array and increment j by 1
+
 ![](Merge-sort.gif)
