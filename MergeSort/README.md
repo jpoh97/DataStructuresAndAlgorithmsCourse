@@ -6,6 +6,10 @@
 * Splitting phase leads to faster sorting during the Merging phase
 * Splitting is logical. We don't create new arrays
 
+* NOT in place algorithm (Uses temporary arrays)
+* O(nlogn) - base 2. We're repeatedly dividing the array in half during the splitting phase
+* Stable algorithm
+
 ## Merge Sort - Splitting Phase
 
 * Start with an unsorted array
@@ -27,5 +31,9 @@
 * We create a temporary array large enough to hold al the elements in the arrays we're merging
 * We set i to the first index of the left array, and j to the first index od the right array
 * We compare left[i] to right[j]. if left is smaller, we copy it to the temp array and increment i by 1. If right is smaller, we copy it to the temp array and increment j by 1
+* We repeat this process until al elements in the 2 arrays have been processed
+* At this point, the temporary array contains the merged values in sorted order
+* We then copy this temporary array back to the original input array, at the correct positions
+* If the left array is at positions x to y, and the right array is at positions y + 1 to z, then after the copy, positions x to z will be sorted in the original array
 
 ![](Merge-sort.gif)
