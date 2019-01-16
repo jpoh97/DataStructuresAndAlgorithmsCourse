@@ -1,0 +1,8 @@
+# Recursion
+
+* A method is a recursive method when it calls itself.
+* In order for recursion to work properly you need some condition that's going to end the recursion and that condition is known as the breaking condition and it's also called the base case.
+* Without a base (breaking) condition, we get recursive calls until eventually we get a StackOverflowError.
+* The iterative implementation usually runs faster and it doesn't use as much memory because there's overhead involved with pushing method calls onto the call stack and each stack frame uses some memory. But sometimes the iterative way isn't as intuitive or if you write the algorithm in an iterative way it'll be like a 500 line method or something like that. So developers still use recursion because it's often the most elegant and more easier to understand solution.
+* It's possible to get that exception even when you do have a breaking condition if you write a recursive method and again it invokes itself a thousand times you're still possibly going to get a stack overflow exception because you're not hitting that breaking condition. So if even if you have a breaking condition if if you call the recursive method with something that's going to cause the method to invoke itself a million times you're going to get a StackOverflowError.
+* Now there is a way around this potential blurring of the stack It's called tail recursion but we're not going to see that for two reasons. First of all non of the algorithms we look at none of the implementations use tail recursion but the second and perhaps most more important reason for Java is that the Java compiler doesn't use tail recursion.
