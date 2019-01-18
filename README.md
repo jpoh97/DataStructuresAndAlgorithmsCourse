@@ -9,3 +9,4 @@
 * ShellSort
 * Recursion
 * MergeSort
+* QuickSort
