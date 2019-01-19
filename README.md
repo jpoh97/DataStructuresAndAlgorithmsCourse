@@ -3,10 +3,4 @@
 ### Order:
 
 * Arrays
-* BubbleSort
-* SelectionSort
-* InsertionSort
-* ShellSort
-* Recursion
-* MergeSort
-* QuickSort
+* SortAlgorithms
