@@ -10,3 +10,4 @@
 * MergeSort
 * QuickSort
 * CountingSort
+* RadixSort
