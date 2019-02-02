@@ -27,6 +27,13 @@ public class Main {
             countArray[getIndex(position, value)]++;
         }
 
+        /*
+        To sort in descending order:
+
+        for (int j = radix-2; j >= 0; j--) {
+            countArray[j] += countArray[j + 1];
+        }
+         */
         for (int j = 1; j < radix; j++) {
             countArray[j] += countArray[j - 1];
         }
