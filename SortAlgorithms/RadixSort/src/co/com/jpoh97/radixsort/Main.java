@@ -37,9 +37,12 @@ public class Main {
             temp[--countArray[getDigit(position, input[tempIndex], radix)]] = input[tempIndex];
         }
 
+        System.arraycopy(temp, 0, input, 0, numItems);
+        /* Copy temp to input. System copy vs for
         for (int tempIndex = 0; tempIndex < numItems; tempIndex++) {
             input[tempIndex] = temp[tempIndex];
         }
+        */
     }
 
     private static int getDigit(int position, int value, int radix) {
